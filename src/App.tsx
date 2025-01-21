@@ -1,12 +1,9 @@
-import { Button } from './components/ui/button';
+import { useRoutes } from 'react-router-dom';
+import routes from './routes/routes';
 
 function App() {
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Button>Click me</Button>
-    </>
-  );
+  const content = useRoutes(routes);
+  return content;
 }
 
 export default App;
