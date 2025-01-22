@@ -16,7 +16,7 @@ const GuestGuard: FC<GuestGuardProps> = ({ children }) => {
 
   return (
     <>
-      <MainLayout>{children}</MainLayout>
+      <MainLayout radialBg>{children}</MainLayout>
     </>
   );
 };

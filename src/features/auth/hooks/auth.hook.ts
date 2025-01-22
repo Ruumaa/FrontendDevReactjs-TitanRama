@@ -59,7 +59,6 @@ export const useValidateUsername = () => {
     }
     return false;
   };
-  console.log(existingUsernames);
   return { isUsernameTaken };
 };
 

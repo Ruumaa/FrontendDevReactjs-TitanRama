@@ -1,5 +1,7 @@
+import HomeContent from '@/features/home/components/HomeContent';
+
 const Home = () => {
-  return <div>Home Ni bosr</div>;
+  return <HomeContent />;
 };
 
 export default Home;

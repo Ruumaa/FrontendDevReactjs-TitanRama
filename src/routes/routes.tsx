@@ -1,4 +1,6 @@
+import MainLayout from '@/components/layout/MainLayout';
 import LoadingScreen from '@/components/LoadingScreen';
+import Navbar from '@/components/Navbar';
 import AuthGuard from '@/shared/utils/auth/AuthGuard';
 import GuestGuard from '@/shared/utils/auth/GuestGuard';
 import { Suspense, lazy } from 'react';
@@ -14,6 +16,9 @@ const Loadable = (Component: any) => (props: JSX.IntrinsicAttributes) =>
 const Login = Loadable(lazy(() => import('../pages/auth/Login')));
 const Register = Loadable(lazy(() => import('../pages/auth/Register')));
 const Home = Loadable(lazy(() => import('../pages/home/Home')));
+const Restaurant = Loadable(
+  lazy(() => import('../pages/restaurant/Restaurant'))
+);
 
 const routes: RouteObject[] = [
   {
@@ -41,7 +46,21 @@ const routes: RouteObject[] = [
     path: '/',
     element: (
       <AuthGuard>
-        <Home />
+        <Navbar />
+        <MainLayout>
+          <Home />
+        </MainLayout>
+      </AuthGuard>
+    ),
+  },
+  {
+    path: '/restaurant/:id',
+    element: (
+      <AuthGuard>
+        <Navbar />
+        <MainLayout>
+          <Restaurant />
+        </MainLayout>
       </AuthGuard>
     ),
   },

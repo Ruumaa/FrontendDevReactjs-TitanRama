@@ -1,4 +1,3 @@
-import MainLayout from '@/components/layout/MainLayout';
 import { useAuth } from '@/features/auth/components/AuthProviders';
 import { FC, ReactNode, useState } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
@@ -27,11 +26,7 @@ const AuthGuard: FC<AuthGuardProps> = (props) => {
     return <Navigate to={requestedLocation} />;
   }
 
-  return (
-    <>
-      <MainLayout>{children}</MainLayout>
-    </>
-  );
+  return <>{children}</>;
 };
 
 export default AuthGuard;

@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     return localStorage.getItem('isAuthenticated') === 'true';
   });
 
-  const login = (user: any) => {
+  const login = (_user: any) => {
     setIsAuthenticated(true);
     localStorage.setItem('isAuthenticated', 'true');
   };
