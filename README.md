@@ -1,5 +1,3 @@
-# Restaurant React
-
 ## 📌 Tentang Proyek
 Menggunakan **ReactJs v18.3.1** dan **Node v21.7.1**
 
