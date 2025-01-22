@@ -8,13 +8,13 @@ Berikut langkah-langkah untuk menjalankan proyek:
 ```bash
 git clone https://github.com/Ruumaa/FrontendDevReactjs-TitanRama.git
 ```
-2️⃣ Menambahkan file **.env.local** di root proyek
+###2️⃣ Menambahkan file **.env.local** di root proyek
 ```bash
 VITE_API_URL=https://678f378a49875e5a1a90f03f.mockapi.io
 ```
 
 
-3️⃣ Menjalankan Proyek
+###3️⃣ Menjalankan Proyek
 ```bash
 # Install dependencies
 npm install
