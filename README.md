@@ -28,3 +28,7 @@ Anda bisa membuat akun baru atau login dengan akun yang sudah ada
 username: user
 password: user
 ```
+## 🔗 Link Netlify
+```bash
+https://gorgeous-kringle-a3c35e.netlify.app/
+```
